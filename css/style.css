@@ -5,18 +5,25 @@
 
 body{
     height: 100dvh;
-    display: flex;
 
     background-image: url(../img/fondoMadera.jpg)
 }
 
 header{
-    height: 20dvh;
+    height: 10dvh;
 
 }
 
 main{
     height: 60dvh;
+
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
 
 }
 
@@ -28,21 +35,38 @@ footer{
     right: 0;
     margin-bottom: 40px;
 
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 1fr;
-    
-    
-    & .dados{
-        justify-self: center;
-    }
-    &.footer__botontirar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .dados{
+        height: 125px;
+        width: 125px;
+        user-select: none;
+        
     }
 
-    
+    .footer__botontirar{
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .footer__botontirar:hover {
+        background-color: #45a049;
+    }
 
 }
-.dado6{
+
+
+.dadosDiv{
     width: 100px;
     height: 100px;
     background-image: url('../img/dadoVector.svg');
@@ -61,3 +85,4 @@ footer{
         user-select: none;
     }
 }
+
