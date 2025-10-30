@@ -1,0 +1,63 @@
+@import url(normalize.css);
+@import url(reset.css);
+
+/* Estilos Generales */
+
+body{
+    height: 100dvh;
+    display: flex;
+
+    background-image: url(../img/fondoMadera.jpg)
+}
+
+header{
+    height: 20dvh;
+
+}
+
+main{
+    height: 60dvh;
+
+}
+
+footer{
+    height: 20dvh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    
+    
+    & .dados{
+        justify-self: center;
+    }
+    &.footer__botontirar {
+    }
+
+    
+
+}
+.dado6{
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/dadoVector.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: #333333;
+    
+    & h1{
+        font-size: 3.125rem;
+        user-select: none;
+    }
+}
